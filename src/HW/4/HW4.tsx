@@ -18,6 +18,9 @@ export const HW4 = () => {
   ]);
 
   const handleSave = () => {
+      if (!currentText.trim()){
+          return
+      }
     setTexts([currentText, ...texts]);
     setCurrentText('');
   };
